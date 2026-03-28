@@ -48,7 +48,7 @@ export default function ContactPage() {
               </span>
               <div className="text-th-ivory-dim">
                 <p>火〜金 17:00 - 22:30</p>
-                <p>土・祝日 16:00 - 22:30</p>
+                <p>土・日・祝日 16:00 - 22:30</p>
               </div>
             </div>
             <div className="flex gap-6">

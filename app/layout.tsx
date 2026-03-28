@@ -49,7 +49,7 @@ const jsonLd = {
     streetAddress: "寿3-4-8",
     addressLocality: "釧路市",
     addressRegion: "北海道",
-    postalCode: "",
+    postalCode: "085-0015",
     addressCountry: "JP",
   },
   geo: {

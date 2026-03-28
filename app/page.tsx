@@ -128,7 +128,7 @@ export default function Home() {
               <div className="text-th-ivory-dim">
                 <p>火〜金 17:00 - 22:30</p>
                 <p className="text-sm text-th-ivory-dim/60">（L.O. 22:00）</p>
-                <p className="mt-1">土・祝日 16:00 - 22:30</p>
+                <p className="mt-1">土・日・祝日 16:00 - 22:30</p>
                 <p className="text-sm text-th-ivory-dim/60">（L.O. 22:00）</p>
               </div>
             </div>

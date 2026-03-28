@@ -54,7 +54,7 @@ export default function InfoPage() {
             <InfoRow label="営業時間">
               <div>
                 <p>火〜金 17:00 - 22:30（L.O. 22:00）</p>
-                <p>土・祝日 16:00 - 22:30（L.O. 22:00）</p>
+                <p>土・日・祝日 16:00 - 22:30（L.O. 22:00）</p>
               </div>
             </InfoRow>
             <InfoRow label="定休日">月曜日（祝日の場合は火曜休業）</InfoRow>
