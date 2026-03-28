@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --th-bg: #080604;
+  --th-crimson: #9B1B30;
+  --th-crimson-bright: #D4374B;
+  --th-gold: #C9A84C;
+  --th-gold-dim: #9A7D3A;
+  --th-ivory: #F5EDE0;
+  --th-ivory-dim: #C8BDA8;
+  --th-charcoal: #161210;
+}
+
+@theme inline {
+  --color-th-bg: #080604;
+  --color-th-crimson: #9B1B30;
+  --color-th-crimson-bright: #D4374B;
+  --color-th-gold: #C9A84C;
+  --color-th-gold-dim: #9A7D3A;
+  --color-th-ivory: #F5EDE0;
+  --color-th-ivory-dim: #C8BDA8;
+  --color-th-charcoal: #161210;
+  --font-hina: 'Hina Mincho', serif;
+  --font-gothic: 'Zen Kaku Gothic New', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--th-bg);
+  color: var(--th-ivory);
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-heading {
+  font-family: 'Hina Mincho', serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+.fire-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--th-crimson) 20%,
+    var(--th-gold) 50%,
+    var(--th-crimson) 80%,
+    transparent 100%
+  );
+  opacity: 0.3;
+}
+
+.phone-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--th-gold);
+  color: var(--th-ivory);
+  font-family: 'Hina Mincho', serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.phone-cta:hover {
+  background: rgba(201, 168, 76, 0.1);
+  border-color: var(--th-ivory);
+}
+
+@media (max-width: 768px) {
+  .mobile-phone-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    background: var(--th-crimson);
+    border-top: 1px solid rgba(201, 168, 76, 0.3);
+    padding: 0.75rem;
+  }
+}
+
+.nav-link {
+  font-family: 'Hina Mincho', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--th-ivory-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--th-gold);
+}
