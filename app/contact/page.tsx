@@ -6,7 +6,7 @@ import { MobilePhoneBar } from "../components/mobile-phone-bar";
 export const metadata: Metadata = {
   title: "お問い合わせ | 焼肉 大鵬",
   description:
-    "焼肉 大鵬へのお問い合わせ・ご予約。電話: 0154-24-9156。火〜金 17:00-22:30 / 土・祝日 16:00-22:30。",
+    "焼肉 大鵬へのお問い合わせ・ご予約。電話: 0154-24-9156。火〜金 17:00-22:30 / 土・日・祝日 16:00-22:30。",
 };
 
 export default function ContactPage() {
